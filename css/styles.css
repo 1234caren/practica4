@@ -1,0 +1,78 @@
+footer{
+	width: 100%;
+	margin: 0 auto; 
+	font-family: 'Montserrat', sans-serif;
+}
+.container{
+  width: 1280px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+/*newsletter*/
+footer .contenedor-fondo{
+	background-color:#d7dae0;
+}
+footer .titulo-news{
+	line-height: 42px;
+    font-weight: 700
+}
+footer .newsletter .btn{
+	background-color: #000000;
+	border: 1px solid #000000;
+	height: 34px;
+}
+footer .newsletter .email{
+	height: 30px;
+    width: 259px;
+    border:1px solid #000000 ;
+}
+footer .newsletter-dos{
+	line-height: 70px;
+}
+/*iconos*/
+footer .fa{
+	font-size: 22px;
+    width: 4%;
+}
+/*columnas*/
+footer .rows{
+	display: block;
+	text-align: center;
+}
+footer .columnas{
+	display: inline-block;
+    width: 24%;
+    padding-top: 40px;
+}
+footer .rows .titulo-footer{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+}
+/*imagenes*/
+footer .columna-dos{
+	display: inline-block;
+    padding-top: 95px;
+}
+/*pie*/
+footer .contenedor-fondo-pie{
+	background-color: #000000;
+	height: 26px;
+}
+footer .contenedor-fondo-pie span:after{
+	content: "\f0c2";
+	font: normal normal normal 14px/1 FontAwesome;
+ 	padding-left: 5px;
+ 	font-size: 24px;
+ 	color: white;
+ 	float: right;
+ 	width: 10%;
+}
+footer .contenedor-fondo-pie .titulo-pie{
+	color: white;
+	font-size: 10px;
+	font-weight: 500;
+	padding-left: 90px;
+
+}
