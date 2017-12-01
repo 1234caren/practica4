@@ -1,3 +1,4 @@
+
 footer{
 	width: 100%;
 	margin: 0 auto; 
@@ -76,3 +77,23 @@ footer .contenedor-fondo-pie .titulo-pie{
 	padding-left: 90px;
 
 }
+
+body {
+    display: block;
+    margin: 0px;
+}
+
+.img-principal{
+	width: 100%;
+}
+
+.producto{
+	display: inline-block;
+	float: left;
+	width:25%;
+}
+
+.productos{
+	margin: 20px 0px 20px 0px;
+}
+
