@@ -21,19 +21,24 @@ footer .newsletter .btn{
 	background-color: #000000;
 	border: 1px solid #000000;
 	height: 34px;
+	float: none;
 }
 footer .newsletter .email{
 	height: 30px;
     width: 259px;
     border:1px solid #000000 ;
+    color:#b5b5b7;
 }
 footer .newsletter-dos{
 	line-height: 70px;
 }
 /*iconos*/
-footer .fa{
+footer .fa.iconos{
 	font-size: 22px;
     width: 4%;
+}
+footer .fa.sobre{
+	color: #ffffff;
 }
 /*columnas*/
 footer .rows{

@@ -2,10 +2,12 @@
 <html>
 <head>
 	<title></title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="fonts/fontawesome/font-awesome.css">
-
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <footer>
@@ -13,18 +15,20 @@
 		<div class="newsletter container">
 			<span class="titulo-news">SUSCRIBISTE A NUESTRO NEWSLETTER</span>
 			<div class="newsletter-dos">
-				<input class="email" type="text" name="" value="" placeholder="Ingresa  tu direccion de email">
-				<input class="btn" type="button" name="" value="ok">
+				<input  onfocus="newsSelect(this,'Ingresá tu direccion de email');" onblur="newsLeave(this,'Ingresá tu email');" class="email" value="Ingresá tu direccion de email" size="20" type="text" name="newsletter">
+				<button type="submit" class="btn">
+					<i class="fa fa-envelope-o sobre" aria-hidden="true">	
+					</i>
+				</button>
 			</div>
 		</div>
 	</div>
-
 	<div class="container logo">
 		<img src="img/logo-corchodorado.png">
 	</div>
 	<div class="container">
-		<i class="fa fa-facebook"></i>
-		<i class="fa fa-instagram"></i>
+		<i class="fa fa-facebook iconos"></i>
+		<i class="fa fa-instagram iconos"></i>
 	</div>
 	<div class="rows container">
 		<div class="columnas">
@@ -52,13 +56,7 @@
 		<div>
 			<span class="titulo-pie">TODOS LOS DERECHOS RESERVADOS</span>
 		</div>
-		
 	</div>
-
-
 </footer>
-
-
-
 </body>
 </html>
