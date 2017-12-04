@@ -1,5 +1,4 @@
-
-footer{
+body{
 	width: 100%;
 	margin: 0 auto; 
 	font-family: 'Montserrat', sans-serif;
@@ -93,32 +92,90 @@ footer .contenedor-fondo-pie .titulo-pie{
 	padding-left: 90px;
 
 }
-
 body {
     display: block;
     margin: 0px;
 }
-
 .img-principal{
 	width: 100%;
 }
-
 .producto{
 	display: inline-block;
 	float: left;
 	width:25%;
 }
-
 .productos{
 	margin: 20px 0px 20px 0px;
 	float: left;
     width: 100%;
 }
-
+.productos-nuevo{
+	margin: 20px 0px;
+	float: left;
+	width: 75%;
+}
 .producto p{
 	font-weight: 700;
+	text-transform: uppercase;
 }
-
 .precio{
 	color: #a25b0d;
+}
+.container.producto-grilla .desplegable-dos{
+  	font-size: 12px;
+    border:0px;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 0 10px;
+    font-family:  'Montserrat', sans-serif;
+}
+}
+.row{
+	display: block;
+}
+.columnas{
+	display: inline-block;
+}
+.columna-uno{
+	width: 25%;
+	float: left;
+}
+.orden{
+	float: right;
+}
+.producto-grilla .lista-uno{
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: initial;
+}
+.producto-grilla .lista-uno li{
+	list-style: none;
+	text-align: initial;
+	font-size: 13px;
+}
+.producto-grilla .lista-uno span:after{
+	content: "\f107";
+	font: normal normal normal 14px/1 FontAwesome;
+ 	padding-left: 5px;
+ 	font-size: 15px;
+ 	float: right;
+ 	width: 10%;
+}
+.producto-grilla .lista-uno span{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	text-align: initial;
+}
+.producto-grilla .productos-nuevo button{
+	background-color: #a25b0d;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    width: 70%;
+    border: 1px solid #a25b0d;
+    height: 40px;
+    border-radius: 2px;
 }
