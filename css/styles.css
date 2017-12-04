@@ -1,3 +1,4 @@
+
 footer{
 	width: 100%;
 	margin: 0 auto; 
@@ -12,6 +13,8 @@ footer{
 /*newsletter*/
 footer .contenedor-fondo{
 	background-color:#d7dae0;
+	float: left;
+	width: 100%;
 }
 footer .titulo-news{
 	line-height: 62px;
@@ -89,4 +92,33 @@ footer .contenedor-fondo-pie .titulo-pie{
 	font-weight: 500;
 	padding-left: 90px;
 
+}
+
+body {
+    display: block;
+    margin: 0px;
+}
+
+.img-principal{
+	width: 100%;
+}
+
+.producto{
+	display: inline-block;
+	float: left;
+	width:25%;
+}
+
+.productos{
+	margin: 20px 0px 20px 0px;
+	float: left;
+    width: 100%;
+}
+
+.producto p{
+	font-weight: 700;
+}
+
+.precio{
+	color: #a25b0d;
 }
