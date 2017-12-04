@@ -179,3 +179,141 @@ body {
     height: 40px;
     border-radius: 2px;
 }
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	float: left;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header .container{
+	width: 1280px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+.general{
+	background-color: #000;
+}
+
+	/*Inicial*/
+header .inicial{
+	float: left;
+	width: 100%;
+	background-color: #000;
+}
+
+header .social{
+	width: 33%;
+	display: inline-block;
+}
+
+header .social{
+	float: left;
+}
+
+header .social .iconos{
+	float: left;
+	color: #fff;
+	margin: 10px 8px;
+}
+
+header .info-inicial{
+	float: left;
+	width: 33%;
+	display: inline-block;
+	color: #fff;
+}
+
+header .info-inicial span{
+	line-height: 36px;
+	font-size: 10px;
+}
+
+header .info-inicial img{
+	margin-bottom: -6px;
+	margin-left: 12px;
+}
+
+header .camion{
+	display: inline-block;
+}
+
+header .login{
+	float: left;
+	width: 33%;
+	display: inline-block;
+}
+
+header .sub-login{
+	display: inline-block;
+	font-size: 10px;
+	line-height: 36px;
+	float: right;
+}
+ header .sub-login a{
+ 	color: #fff;
+ }
+
+ header .sub-login a:hover{
+ 	font-weight: bold;
+ }
+
+
+header .login ul{
+	float: right;
+	display: block;
+}
+
+header .login ul li{
+	padding: 0 12px;
+	display: inline-block;
+}
+
+header .login ul .borde a{
+    border-right: 1px solid;
+    padding: 2px;
+    padding-right: 28px;
+}
+
+	/*Segunda*/
+header .contenedor{
+	width: 100%;
+	text-align: center;
+	float: right;
+	display: block;
+	padding-top: 10px;
+}
+
+	/*Nav*/
+header .sub-nav{
+	display: inline-block;
+	padding: 14px;
+	font-size: 11px;
+}
+
+header .sub-nav:hover{
+	background-color: #000;
+}
+
+header .sub-nav:hover a{
+	color: #fff;
+}
+
+header .sub-nav a{
+	color: #000;
+	font-weight: 900;
+}
