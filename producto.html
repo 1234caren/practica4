@@ -10,10 +10,54 @@
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
+<header>
+	<div class="inicial">
+		<div class="container">
+			<div class="social">
+				<a href=""><i class="fa fa-facebook iconos"></i></a>
+				<a href=""><i class="fa fa-instagram iconos"></i></a>
+			</div>
+			<div class="info-inicial">
+					<span>A partir de $1000 envios gratis</span>
+					<div class="camion">
+						<img src="img/enviodos.png">
+					</div>
+			</div>
+			<div class="login">
+				<ul>
+					<li class="sub-login">
+						<a href="">Inicia sesion</a>
+					</li>
+					<li class="sub-login borde">
+						<a href="">Mayoristas</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="segunda">
+		<div class="contenedor">
+			<div class="logo">
+				<img src="img/logo-header.png">
+			</div>
+		</div>
+	</div>
+	<nav class="container">
+		<ul>
+			<li class="sub-nav"><a href="">VINOS</a></li>
+			<li class="sub-nav"><a href="">ESPUMANTES</a></li>
+			<li class="sub-nav"><a href="">WHISKYS</a></li>			
+			<li class="sub-nav"><a href="">CERVEZAS</a></li>
+			<li class="sub-nav"><a href="">ESPIRITUOSAS</a></li>
+			<li class="sub-nav"><a href="">REGALOS</a></li>
+			<li class="sub-nav"><a href="">DELICIAS</a></li>
+			<li class="sub-nav"><a href="">OFERTAS</a></li>
+		</ul>
+	</nav>
+</header>
 	<div class="container producto-grilla">
 		<div class="row">
 			<div class="columnas">
-				<span>hola</span>
 			</div>
 			<div class="orden columnas">
 					<label>ORDENAR POR:</label>
@@ -30,7 +74,7 @@
 				<form>
 					<ul class="lista-uno">
 						<li> <span>Rango de precios</span>
-							<ul>
+							<ul class="lista-dos">
 								<li>
 									<input type="checkbox" name="">$181-$350
 								</li>
@@ -47,7 +91,7 @@
 				<form>
 					<ul class="lista-uno">
 						<li> <span>uva</span>
-							<ul>
+							<ul class="lista-dos">
 								<li>
 									<input type="checkbox" name="">$181-$350
 								</li>
@@ -56,6 +100,40 @@
 								</li>
 								<li>
 									<input type="checkbox" name="">$181-$350
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</form>
+				<form>
+					<ul class="lista-uno">
+						<li> <span>bodega</span>
+							<ul class="lista-dos">
+								<li>
+									<input type="checkbox" name="">$181-$350
+								</li>
+								<li>
+									<input type="checkbox" name="">$181-$350
+								</li>
+								<li>
+									<input type="checkbox" name="">$181-$350
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</form>
+				<form>
+					<ul class="lista-uno">
+						<li> <span>estuche</span>
+							<ul class="lista-dos">
+								<li>
+									<input type="checkbox" name="">Cruz de Piedra
+								</li>
+								<li>
+									<input type="checkbox" name="">San Carlos
+								</li>
+								<li>
+									<input type="checkbox" name=""><i class="fa fa-plus plus" aria-hidden="true"></i>ver mas
 								</li>
 							</ul>
 						</li>
@@ -88,8 +166,83 @@
 					<button>Comprar</button>
 				</div>
 			</div>
+			<div class="productos-nuevo">
+				<div class="producto">
+					<img  src="img/producto1.png">
+					<p>NORTON D.O.C <br> malbec 750 ml</p>
+					<p class="precio">$585</p>
+					<button>Comprar</button>
+				</div>
+				<div class="producto">
+					<img  src="img/producto2.png">
+					<p>NORTON RESERVA <br> malbec 750 ml</p>
+					<p class="precio">$235</p>
+					<button>Comprar</button>
+				</div>
+				<div class="producto">
+					<img  src="img/producto3.png">	
+					<P>Norton lote negro <br>  malbec 750 ml</P>
+					<p class="precio">$185</p>
+					<button>Comprar</button>
+				</div>
+				<div class="producto">	
+					<img  src="img/producto3.png">
+					<p>NORTON RESERVA <br> malbec 750 ml</p>
+					<p class="precio">$285</p>
+					<button>Comprar</button>
+				</div>
+			</div>
 
 		</div>
 	</div>
+<footer>
+	<div class="contenedor-fondo">
+		<div class="newsletter container">
+			<span class="titulo-news">SUSCRIBISTE A NUESTRO NEWSLETTER</span>
+			<div class="newsletter-dos">
+				<input  onfocus="newsSelect(this,'Ingresá tu direccion de email');" onblur="newsLeave(this,'Ingresá tu direccion de email');" class="email" value="Ingresá tu direccion de email" size="20" type="text" name="newsletter">
+				<button type="submit" class="btn">
+					<i class="fa fa-envelope-o sobre" aria-hidden="true">	
+					</i>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="container logo">
+		<img src="img/logo-corchodorado.png">
+	</div>
+	<div class="container">
+		<a href=""><i class="fa fa-facebook iconos"></i></a>
+		<a href=""><i class="fa fa-instagram iconos"></i></a>
+	</div>
+	<div class="rows container">
+		<div class="columnas">
+			<a href=""><span>metodos y costos de envio</span></a>
+		</div>
+		<div class="columnas">
+			<a href=""><span>seguimiento de ordenes</span></a>
+		</div>
+		<div class="columnas">
+			<a href=""><span>cambio y devoluciones</span></a>
+		</div>
+		<div class="columnas">
+			<a href=""><span>terminos y condiciones</span></a>
+		</div>
+	</div>
+	<div class="rows">
+		<div class="columna-dos">
+			<img src="img/data-fiscal.png">
+			<img src="img/seguridad.png">	
+			<img src="img/visa.png">
+			<img src="img/demas.png">
+		</div>
+	</div>
+	<div class="contenedor-fondo-pie">
+		<div>
+			<span class="titulo-pie">TODOS LOS DERECHOS RESERVADOS</span>
+		</div>
+	</div>
+</footer>
+
 </body>
 </html>

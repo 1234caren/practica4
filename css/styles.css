@@ -155,6 +155,8 @@ body {
 	list-style: none;
 	text-align: initial;
 	font-size: 13px;
+	line-height: 17px;
+	padding-top: 8px;
 }
 .producto-grilla .lista-uno span:after{
 	content: "\f107";
@@ -170,6 +172,11 @@ body {
 	font-size: 14px;
 	text-align: initial;
 }
+.producto-grilla .lista-dos li{
+ 	color: #adabab;
+    font-weight: 700;
+    line-height: 31px;
+}
 .producto-grilla .productos-nuevo button{
 	background-color: #a25b0d;
     text-transform: uppercase;
@@ -179,6 +186,12 @@ body {
     border: 1px solid #a25b0d;
     height: 40px;
     border-radius: 2px;
+}
+.producto-grilla .plus{
+	padding-right: 6px;
+    padding-left: 6px;
+    font-size: 10px;
+    color: #dbdbdb;
 }
 ul{
 	margin: 0px;
@@ -352,7 +365,6 @@ header .sub-nav:hover{
     float: left;
     height: fit-content;
 }
-
 .facilidades{
 	float: left;
 	width: 100%;
@@ -375,3 +387,4 @@ header .sub-nav:hover{
 .facilidad p{
 	margin-bottom: 15px;
 }
+
