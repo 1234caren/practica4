@@ -231,6 +231,14 @@ header .social .iconos{
 	margin: 10px 8px;
 }
 
+header .content-social{
+	margin-left: 20px;
+}
+
+header .content-login{
+	margin-right: 20px;
+}
+
 header .info-inicial{
 	float: left;
 	width: 33%;
@@ -303,20 +311,13 @@ header .sub-nav{
 	display: inline-block;
 	padding: 14px;
 	font-size: 11px;
+	color: #000;
+	font-weight: bold;
 }
 
 header .sub-nav:hover{
 	background-color: #000;
-}
-
-header .sub-nav:hover a{
 	color: #fff;
-}
-
-header .sub-nav a{
-	color: #000;
-	font-weight: 900;
-	display: inline-block;
 }
 
 .secciones{
