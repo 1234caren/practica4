@@ -120,6 +120,7 @@ body {
 }
 .precio{
 	color: #a25b0d;
+    display: inline-block;
 }
 .container.producto-grilla .desplegable-dos{
   	font-size: 12px;
@@ -244,6 +245,14 @@ header .social .iconos{
 	margin: 10px 8px;
 }
 
+header .content-social{
+	margin-left: 20px;
+}
+
+header .content-login{
+	margin-right: 20px;
+}
+
 header .info-inicial{
 	float: left;
 	width: 33%;
@@ -316,20 +325,13 @@ header .sub-nav{
 	display: inline-block;
 	padding: 14px;
 	font-size: 11px;
+	color: #000;
+	font-weight: bold;
 }
 
 header .sub-nav:hover{
 	background-color: #000;
-}
-
-header .sub-nav:hover a{
 	color: #fff;
-}
-
-header .sub-nav a{
-	color: #000;
-	font-weight: 900;
-	display: inline-block;
 }
 
 .secciones{
@@ -341,6 +343,8 @@ header .sub-nav a{
 .precio-ant{
 	display: inline-block;
 	margin-left: 15px;
+    color: rgba(170, 171, 172, 1);
+    text-decoration: line-through;
 }
 
 .btn-comprar{
@@ -361,3 +365,22 @@ header .sub-nav a{
     float: left;
     height: fit-content;
 }
+.facilidades{
+	float: left;
+	width: 100%;
+	background-color: rgb(248,246,247); 
+}
+
+.facilidad{
+	display: inline-block;
+	width: 16%
+}
+
+.facilidad img{
+	line-height: 5px;
+}
+
+.imagenes{
+	width: 100%;
+}
+
