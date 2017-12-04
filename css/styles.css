@@ -316,4 +316,35 @@ header .sub-nav:hover a{
 header .sub-nav a{
 	color: #000;
 	font-weight: 900;
+	display: inline-block;
+}
+
+.secciones{
+	margin: 20px 0px 20px 0px;
+	float: left;
+    width: 100%;
+}
+
+.precio-ant{
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.btn-comprar{
+    display: block;
+    margin: auto;
+    background-color: #a25b0d;
+    color: white;
+    text-transform: uppercase;
+    border: 0px;
+    line-height: 38px;
+    font-weight: 700;
+    padding: 1px 48px;
+    border-radius: 3px;
+}
+
+.secciones img{
+	width: 25%;
+    float: left;
+    height: fit-content;
 }
