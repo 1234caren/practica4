@@ -371,3 +371,7 @@ header .sub-nav:hover{
 .imagenes{
 	width: 100%;
 }
+
+.facilidad p{
+	margin-bottom: 15px;
+}
