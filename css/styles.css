@@ -214,9 +214,11 @@ header{
 
 header .container{
 	width: 1280px;
-	margin: 0 auto;
-	display: block;
-	text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+    position: relative;
 }
 
 .general{
@@ -225,13 +227,14 @@ header .container{
 
 	/*Inicial*/
 header .inicial{
-	float: left;
-	width: 100%;
-	background-color: #000;
+    float: left;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
 }
 
 header .social{
-	width: 33%;
+	width: 33.333%;
 	display: inline-block;
 }
 
@@ -250,7 +253,9 @@ header .content-social{
 }
 
 header .content-login{
-	margin-right: 20px;
+    margin-right: 0;
+    display: inline-block;
+    float: right;
 }
 
 header .info-inicial{
@@ -301,8 +306,9 @@ header .login ul{
 }
 
 header .login ul li{
-	padding: 0 12px;
-	display: inline-block;
+    padding: 0 12px;
+    display: inline-block;
+    padding-right: 0;
 }
 
 header .login ul .borde a{
@@ -312,15 +318,117 @@ header .login ul .borde a{
 }
 
 	/*Segunda*/
+header .segunda{
+	text-align: center;
+}
+
 header .contenedor{
 	width: 100%;
-	text-align: center;
-	float: right;
-	display: block;
 	padding-top: 10px;
 }
 
+header .content-search{
+	display: inline-block;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+header .logo{
+	display: inline-block;
+}
+
+header .search{
+	display: inline-block;
+	padding-top: 18px;
+	border-bottom: 1px solid #000;
+}
+
+header .serch:before{
+	content:"\f007";
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 20px;
+	color: #000;
+}
+
+.new-inp{
+	color: #878787;
+    float: left;
+    border: 0px solid #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: -17px;
+    border-radius: 0px;
+    font-style: normal;
+}
+
+header .search .new-but{
+    background: #fff;
+    float: right;
+    line-height: 19px;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    background-image:url(../img/lupa.jpg);
+    background-repeat:no-repeat;
+    height:14px;
+    width:14px;
+    background-position:center;
+}
+
+header button, input{
+	float: right;
+}
+
+header .carrito{
+    display: inline-block;
+    float: right;
+    width: 20px;
+    line-height: 54px;
+    margin-left: 10px;
+}
+
 	/*Nav*/
+
+.container-nav{
+	width: 1280px;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+} 
+
+.sticky{
+	width: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	padding-top: 5px;
+	transition: padding-top 1s;
+	box-shadow: 0 0 7px rgba(2, 3, 3, 1);
+}
+
+.logo-sticky {
+  position: absolute;
+  opacity: 0;
+  width: 90px;
+  bottom: 10px;
+  left: 20px;
+  z-index: 999;
+}
+
+.sticky .logo-sticky {
+  opacity: 1;
+  width: 100px;
+  transition: 1s;
+}
+
+.logo-sticky img{
+    width: 172px;
+    margin-bottom: -12px;
+    margin-left: 16px;
+}
+
+
 header .sub-nav{
 	display: inline-block;
 	padding: 14px;
@@ -383,4 +491,3 @@ header .sub-nav:hover{
 .imagenes{
 	width: 100%;
 }
-

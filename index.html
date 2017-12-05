@@ -39,15 +39,31 @@
 		</div>
 	</div>
 	<div class="segunda">
-		<div class="contenedor">
-			<div class="logo">
-				<a href="">
-					<img src="img/logo-header.png">
-				</a>
-			</div>
+		<div class="container">
+			<div class="contenedor">
+				<div class="logo">
+					<a href="">
+						<img src="img/logo-header.png">
+					</a>
+				</div>
+				<div class="content-search">
+					<div class="search">
+						<button class="new-but"></button>
+						<input id="newsletterClientEmail" onfocus="newsSelect(this,'Buscar...');" onblur="newsLeave(this,'Buscar...');" class="new-inp" value="Buscar..." size="20" type="text" name="newsletterClientEmail" />
+					</div>
+					<div class="carrito">
+						<i class="fa fa-shopping-cart"></i>
+					</div>
+				</div>	
+			</div>		
 		</div>
 	</div>
-	<nav class="container">
+	<nav class="container-nav">
+		<div id="logo" class="logo-sticky">
+			<a href="/" title="Crocs" class="link-logo">
+				<img src="img/logo-header.png">
+			</a>
+		</div>
 		<ul>
 			<a href=""><li class="sub-nav">VINOS</li></a>
 			<a href=""><li class="sub-nav">ESPUMANTES</li></a>
