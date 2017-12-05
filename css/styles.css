@@ -142,9 +142,10 @@ body {
 	float: right;
 	width: 75%;
 }
-.producto p{
+.productos .producto p{
 	font-weight: 700;
 	text-transform: uppercase;
+	text-align: center;
 }
 .productos-nuevo .producto p{
 	width: 100%;
@@ -393,6 +394,7 @@ header .sub-nav:hover{
     font-weight: 700;
     padding: 1px 48px;
     border-radius: 3px;
+    cursor:pointer;
 }
 
 .secciones img{
@@ -404,14 +406,14 @@ header .sub-nav:hover{
 	float: left;
 	width: 100%;
 	background-color: rgb(248,246,247);
-	padding: 40px 0 40px 0;
-	margin: 10px 0 40px 0;
+	padding: 40px 0 30px 0;
+	margin: 10px 0 0 0;
 }
 
 .facilidad{
 	display: inline-block;
 	width: 16%;
-	border-right: 1px solid rgb(150, 148, 149);
+	border-right: 1px solid rgb(191, 191, 191);
 }
 
 .facilidad img{
@@ -479,4 +481,21 @@ footer{
 	color: white;
 	font-size: 12px;
 	margin-top: 30px;
+}
+
+.productos p{	
+	text-align:left;
+    font-weight: 700;
+}
+
+.facilidades .container{
+	margin-bottom: 60px;
+}
+
+.container .imagenes:nth-child(1) .facilidad{
+	padding-top: 20px;
+}
+
+.container .imagenes:nth-child(2) .facilidad{
+	padding-bottom: 20px;
 }
