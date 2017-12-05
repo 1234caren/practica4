@@ -499,3 +499,11 @@ footer{
 .container .imagenes:nth-child(2) .facilidad{
 	padding-bottom: 20px;
 }
+
+.banner-copas{
+	width: 100%;
+}
+
+.banner-copas img{
+	width: 100%;
+}
