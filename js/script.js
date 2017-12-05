@@ -2,7 +2,13 @@
 jQuery(document).ready(function(){
 
 	HEADER.init();
+
+	jQuery('.lista-uno').on('click', function(){
+		jQuery('.lista-dos',this).slideToggle();
+		
+	});
 });
+
 
 function newsLeave(sender, defaultValue) {
     if (jQuery.trim(sender.value) == '') sender.value = defaultValue;
@@ -29,3 +35,4 @@ var HEADER = {
         });
     }
 }
+

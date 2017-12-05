@@ -11,28 +11,38 @@ body{
 }
 /*newsletter*/
 footer .contenedor-fondo{
-	background-color:#d7dae0;
+	background-color: #a25b0d;
 	float: left;
 	width: 100%;
 }
+footer .contenedor-footer{
+	float: left;
+	width: 100%;
+}
+
 footer .titulo-news{
-	line-height: 62px;
-    font-weight: 700;
-    width: 100%;
-    display: inline-block;
+	/* line-height: 0px; */
+	font-weight: 800;
+	width: 100%;
+	display: inline-block;
+	letter-spacing: 0px;
+	color: white;
+	font-size: 12px;
+	margin-top: 30px;
 }
 footer .newsletter .btn{
 	background-color: #000000;
 	border: 1px solid #000000;
-	height: 34px;
+	height: 32px;
 	float: left;
 }
 footer .newsletter .email{
 	height: 30px;
-    width: 259px;
-    border:1px solid #000000 ;
-    color:#b5b5b7;
-    float: left;
+	width: 259px;
+	border: none;
+	color:#b5b5b7;
+	float: left;
+	text-indent: 14px;
 }
 footer .newsletter-dos{
 	line-height: 70px;
@@ -75,6 +85,8 @@ footer .columna-dos{
 footer .contenedor-fondo-pie{
 	background-color: #000000;
 	height: 26px;
+    float: left;
+    width: 100%;
 }
 footer .contenedor-fondo-pie span:after{
 	content: "\f0c2";
@@ -103,6 +115,37 @@ body {
 	display: inline-block;
 	float: left;
 	width:25%;
+	position: relative;
+}
+.producto .cucarda{
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #b94d00;
+    width: 70px;
+    height: 30px;
+    line-height: 27px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 1px;
+    text-transform: uppercase;
+}
+.producto .cucarda-gris{
+ 	top: 0;
+    right: 0;
+    position: absolute;
+    background-color:#d1d3d6;
+    width: 70px;
+    height: 30px;
+    line-height: 27px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 1px;
+    text-transform:uppercase; 	
 }
 .productos{
 	margin: 20px 0px 20px 0px;
@@ -110,13 +153,17 @@ body {
     width: 100%;
 }
 .productos-nuevo{
-	margin: 20px 0px;
-	float: left;
-	width: 75%;
+	margin: 40px 0px;
+	float: right;
+	width: 80%;
 }
-.producto p{
+.productos .producto p{
 	font-weight: 700;
 	text-transform: uppercase;
+	text-align: center;
+}
+.productos-nuevo .producto p{
+	width: 100%;
 }
 .precio{
 	color: #a25b0d;
@@ -130,6 +177,8 @@ body {
     padding: 0 10px;
     font-family:  'Montserrat', sans-serif;
 }
+.producto-grilla .columnas form{
+	padding-top: 10px;
 }
 .row{
 	display: block;
@@ -138,7 +187,7 @@ body {
 	display: inline-block;
 }
 .columna-uno{
-	width: 25%;
+	width: 20%;
 	float: left;
 }
 .orden{
@@ -150,6 +199,7 @@ body {
 	padding: 0;
 	margin: 0;
 	text-align: initial;
+	padding-top: 30px;
 }
 .producto-grilla .lista-uno li{
 	list-style: none;
@@ -164,7 +214,7 @@ body {
  	padding-left: 5px;
  	font-size: 15px;
  	float: right;
- 	width: 10%;
+ 	width: 8%;
 }
 .producto-grilla .lista-uno span{
 	text-transform: uppercase;
@@ -172,11 +222,16 @@ body {
 	font-size: 14px;
 	text-align: initial;
 }
-.producto-grilla .lista-dos li{
+.producto-grilla .lista-dos {
  	color: #adabab;
     font-weight: 700;
     line-height: 31px;
+   	display: none;
 }
+.columna-uno ul:first-child{
+	border-bottom: 1px solid #d1d3d6;
+}
+
 .producto-grilla .productos-nuevo button{
 	background-color: #a25b0d;
     text-transform: uppercase;
@@ -186,12 +241,21 @@ body {
     border: 1px solid #a25b0d;
     height: 40px;
     border-radius: 2px;
+    cursor: pointer;
+}
+.producto-grilla .productos-nuevo button:hover{
+    border: 3px solid ;
+    box-shadow: 5px 10px;
+    border-radius: 1px;
 }
 .producto-grilla .plus{
 	padding-right: 6px;
     padding-left: 6px;
     font-size: 10px;
     color: #dbdbdb;
+}
+.contenedor-fondo-body{
+	border-bottom: 1px solid #e5e7ea;
 }
 ul{
 	margin: 0px;
@@ -466,6 +530,7 @@ header .sub-nav:hover{
     font-weight: 700;
     padding: 1px 48px;
     border-radius: 3px;
+    cursor:pointer;
 }
 
 .secciones img{
@@ -476,12 +541,15 @@ header .sub-nav:hover{
 .facilidades{
 	float: left;
 	width: 100%;
-	background-color: rgb(248,246,247); 
+	background-color: rgb(248,246,247);
+	padding: 40px 0 30px 0;
+	margin: 10px 0 0 0;
 }
 
 .facilidad{
 	display: inline-block;
-	width: 16%
+	width: 16%;
+	border-right: 1px solid rgb(191, 191, 191);
 }
 
 .facilidad img{
@@ -491,3 +559,80 @@ header .sub-nav:hover{
 .imagenes{
 	width: 100%;
 }
+
+.facilidad p{
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	color: rgb(150, 148, 149);
+	font-size: 11px;
+}
+
+.imagenes p:nth-child(2){
+	margin-top: 0px
+}
+
+.imagenes p:nth-child(1){
+	margin-bottom: 3px
+}
+
+footer{
+	width: 100%;
+    float: left;
+}
+
+.seccion{
+	width: 100%
+}
+
+.seccion:hover{
+	opacity: 0.6;
+}
+
+.facilidad:nth-last-child(1){
+	border-right: 0;
+}
+
+.news{
+	/* display: inline-block; */
+	/* line-height: 35px; */
+	font-weight: 500;
+	width: 100%;
+	display: inline-block;
+	letter-spacing: 0px;
+	color: white;
+	font-size: 9px;
+	margin-bottom: 15px;
+}
+
+[type="checkbox"] {
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+.news-titulo{
+	font-weight: 800;
+	width: 100%;
+	display: inline-block;
+	letter-spacing: 0px;
+	color: white;
+	font-size: 12px;
+	margin-top: 30px;
+}
+
+.productos p{	
+	text-align:left;
+    font-weight: 700;
+}
+
+.facilidades .container{
+	margin-bottom: 60px;
+}
+
+.container .imagenes:nth-child(1) .facilidad{
+	padding-top: 20px;
+}
+
+.container .imagenes:nth-child(2) .facilidad{
+	padding-bottom: 20px;
+}
+
