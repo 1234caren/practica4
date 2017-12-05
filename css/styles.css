@@ -126,11 +126,26 @@ body {
     height: 30px;
     line-height: 27px;
     color: #fff;
-    text-align: center;
     font-size: 12px;
     font-weight: 700;
     text-align: center;
     border-radius: 1px;
+    text-transform: uppercase;
+}
+.producto .cucarda-gris{
+ 	top: 0;
+    right: 0;
+    position: absolute;
+    background-color:#d1d3d6;
+    width: 70px;
+    height: 30px;
+    line-height: 27px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 1px;
+    text-transform:uppercase; 	
 }
 .productos{
 	margin: 20px 0px 20px 0px;
@@ -140,7 +155,7 @@ body {
 .productos-nuevo{
 	margin: 40px 0px;
 	float: right;
-	width: 75%;
+	width: 80%;
 }
 .productos .producto p{
 	font-weight: 700;
@@ -162,6 +177,8 @@ body {
     padding: 0 10px;
     font-family:  'Montserrat', sans-serif;
 }
+.producto-grilla .columnas form{
+	padding-top: 10px;
 }
 .row{
 	display: block;
@@ -170,7 +187,7 @@ body {
 	display: inline-block;
 }
 .columna-uno{
-	width: 25%;
+	width: 20%;
 	float: left;
 }
 .orden{
@@ -182,6 +199,7 @@ body {
 	padding: 0;
 	margin: 0;
 	text-align: initial;
+	padding-top: 30px;
 }
 .producto-grilla .lista-uno li{
 	list-style: none;
@@ -196,7 +214,7 @@ body {
  	padding-left: 5px;
  	font-size: 15px;
  	float: right;
- 	width: 10%;
+ 	width: 8%;
 }
 .producto-grilla .lista-uno span{
 	text-transform: uppercase;
@@ -204,13 +222,14 @@ body {
 	font-size: 14px;
 	text-align: initial;
 }
-.producto-grilla .lista-dos li{
+.producto-grilla .lista-dos {
  	color: #adabab;
     font-weight: 700;
     line-height: 31px;
+   	display: none;
 }
 .columna-uno ul:first-child{
-	border-bottom: 1px solid;
+	border-bottom: 1px solid #d1d3d6;
 }
 
 .producto-grilla .productos-nuevo button{
@@ -222,12 +241,21 @@ body {
     border: 1px solid #a25b0d;
     height: 40px;
     border-radius: 2px;
+    cursor: pointer;
+}
+.producto-grilla .productos-nuevo button:hover{
+    border: 3px solid ;
+    box-shadow: 5px 10px;
+    border-radius: 1px;
 }
 .producto-grilla .plus{
 	padding-right: 6px;
     padding-left: 6px;
     font-size: 10px;
     color: #dbdbdb;
+}
+.contenedor-fondo-body{
+	border-bottom: 1px solid #e5e7ea;
 }
 ul{
 	margin: 0px;
