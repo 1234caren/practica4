@@ -590,6 +590,7 @@ header .sub-nav:hover{
 
 .imagenes{
 	width: 100%;
+	min-height: 61px;
 }
 
 .facilidad p{
@@ -603,11 +604,11 @@ header .sub-nav:hover{
 	width: 100%;
 }
 
-.imagenes p:nth-child(2){
+.facilidades p:nth-child(3){
 	margin-top: 0px
 }
 
-.imagenes p:nth-child(1){
+.facilidades p:nth-child(2){
 	margin-bottom: 3px
 }
 
@@ -701,18 +702,32 @@ footer .fondo{
 
 
 
+
+
 	
 @media only screen and (max-width: 1279px)
 {
-
-.container{
-	float: left;
-	width: 100%;
+	.container{
+		float: left;
+		width: 100%;
+	}
+	header .container{
+	 	float: left;
+	 	width: 100%;
+	}
 }
 
-header .container{
- 	float: left;
- 	width: 100%;
+.breadcrumbs{
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid gray;
+}
+
+.pdp .breadcrumbs p{
+	display: inline-block;
+	font-size: 10px;
+	float: left;
+	color: #808080;
 }
 .columna-uno {
 	    width: 100%;
@@ -741,6 +756,9 @@ header .container{
 	float: left;
 }
 
+.pdp .breadcrumbs .product-name{
+	color: #000000;
+}
 
 }
 
@@ -752,4 +770,39 @@ header .container{
 	.producto .cucarda{
 		top: 10px;
 	}
+
+.pdp .img-miniatura{
+	display: inline-block;
+	float: left;
+	width: 20%;
+}
+
+.pdp .img-grande{
+	display: inline-block;
+	float: left;
+	width: 80%;
+}
+
+.pdp .producto-img{
+	float: left;
+	width: 40% 
+}
+
+.pdp .img-miniatura img{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.pdp .det-producto{
+	padding: 50px 0 0 0;
+	width: 100%;
+	float: left;
+}
+
+.pdp .img-grande img{
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+
 }
