@@ -65,7 +65,8 @@ footer .rows{
 }
 footer .columnas{
 	display: inline-block;
-    width: 24%;
+    width: 25%;
+    float: left;
     padding-top: 40px;
 }
 footer .rows .columnas span{
@@ -118,6 +119,11 @@ body {
 	width:25%;
 	position: relative;
 }
+
+.producto img{
+	width: 100%;
+}
+
 .producto .cucarda{
     top: 0;
     right: 0;
@@ -477,7 +483,7 @@ header .carrito{
 	/*Nav*/
 
 .container-nav{
-	width: 1280px;
+	width: 100%;
 	margin: 0 auto;
 	display: block;
 	text-align: center;
@@ -488,8 +494,10 @@ header .carrito{
 	background-color: #fff;
 	position: fixed;
 	top: 0;
+	right: 0;
 	padding-top: 5px;
 	transition: padding-top 1s;
+	z-index: 99999;
 	box-shadow: 0 0 7px rgba(2, 3, 3, 1);
 }
 
@@ -543,6 +551,8 @@ header .sub-nav:hover{
 
 .btn-comprar{
     display: block;
+    text-align: center;
+    width: 75%;
     margin: auto;
     background-color: #a25b0d;
     color: white;
@@ -550,16 +560,16 @@ header .sub-nav:hover{
     border: 0px;
     line-height: 38px;
     font-weight: 700;
-    padding: 1px 48px;
     border-radius: 3px;
-    cursor:pointer;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .secciones img{
-	width: 25%;
+	width: 100%;
     float: left;
-    height: fit-content;
 }
+
 .facilidades{
 	float: left;
 	width: 100%;
@@ -589,6 +599,10 @@ header .sub-nav:hover{
 	font-size: 11px;
 }
 
+.marcas{
+	width: 100%;
+}
+
 .imagenes p:nth-child(2){
 	margin-top: 0px
 }
@@ -603,8 +617,9 @@ footer{
 }
 
 .seccion{
-	width: 100%
-}
+	width: 25%;
+    float: left;
+    display: inline-block;}
 
 .seccion:hover{
 	opacity: 0.6;
@@ -664,6 +679,10 @@ footer .fondo{
     font-weight: 700;
 }
 
+.productos span{
+	font-weight: 900;
+}
+
 .facilidades .container{
 	margin-bottom: 60px;
 }
@@ -679,6 +698,7 @@ footer .fondo{
 .banner-copas img{
 	width: 100%;
 }
+
 
 @media only screen and (max-width: 1024px){
 	.container {
@@ -701,6 +721,21 @@ footer .fondo{
 	.orden label, select{
 		float: left;
 	}
+
+@media only screen and (max-width: 1279px)
+{
+
+.container{
+	float: left;
+	width: 100%;
+}
+
+header .container{
+ 	float: left;
+ 	width: 100%;
+}
+
+
 
 
 
