@@ -56,6 +56,7 @@ footer .fa.iconos{
 }
 footer .fa.sobre{
 	color: #ffffff;
+	cursor: pointer;
 }
 /*columnas*/
 footer .rows{
@@ -64,7 +65,8 @@ footer .rows{
 }
 footer .columnas{
 	display: inline-block;
-    width: 24%;
+    width: 25%;
+    float: left;
     padding-top: 40px;
 }
 footer .rows .columnas span{
@@ -117,6 +119,11 @@ body {
 	width:25%;
 	position: relative;
 }
+
+.producto img{
+	width: 100%;
+}
+
 .producto .cucarda{
     top: 0;
     right: 0;
@@ -152,6 +159,9 @@ body {
 	float: left;
     width: 100%;
 }
+.productos-nuevo img{
+	width: 100%;
+}
 .productos-nuevo{
 	margin: 40px 0px;
 	float: right;
@@ -179,6 +189,8 @@ body {
 }
 .producto-grilla .columnas form{
 	padding-top: 10px;
+	float: left;
+    width: 100%;
 }
 .row{
 	display: block;
@@ -192,6 +204,7 @@ body {
 }
 .orden{
 	float: right;
+	width: 20%;
 }
 .producto-grilla .lista-uno{
 	display: block;
@@ -204,8 +217,8 @@ body {
 .producto-grilla .lista-uno li{
 	list-style: none;
 	text-align: initial;
-	font-size: 13px;
-	line-height: 17px;
+	font-size: 15px;
+	line-height: 13px;
 	padding-top: 8px;
 }
 .producto-grilla .lista-uno span:after{
@@ -219,17 +232,32 @@ body {
 .producto-grilla .lista-uno span{
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 15px;
 	text-align: initial;
+	float: left;
+    width: 100%;
 }
 .producto-grilla .lista-dos {
  	color: #adabab;
     font-weight: 700;
     line-height: 31px;
    	display: none;
+   	width: 100%;
+    float: left;
+}
+.producto-grilla .lista-uno span.open:after{
+	content: "\f106";
+	font: normal normal normal 14px/1 FontAwesome;
+    padding-left: 5px;
+    font-size: 15px;
+    float: right;
+    width: 8%;	
 }
 .columna-uno ul:first-child{
 	border-bottom: 1px solid #d1d3d6;
+	float: left;
+	width: 100%;
+	padding-bottom: 10px;
 }
 
 .producto-grilla .productos-nuevo button{
@@ -455,7 +483,7 @@ header .carrito{
 	/*Nav*/
 
 .container-nav{
-	width: 1280px;
+	width: 100%;
 	margin: 0 auto;
 	display: block;
 	text-align: center;
@@ -466,8 +494,10 @@ header .carrito{
 	background-color: #fff;
 	position: fixed;
 	top: 0;
+	right: 0;
 	padding-top: 5px;
 	transition: padding-top 1s;
+	z-index: 99999;
 	box-shadow: 0 0 7px rgba(2, 3, 3, 1);
 }
 
@@ -521,6 +551,8 @@ header .sub-nav:hover{
 
 .btn-comprar{
     display: block;
+    text-align: center;
+    width: 75%;
     margin: auto;
     background-color: #a25b0d;
     color: white;
@@ -528,16 +560,16 @@ header .sub-nav:hover{
     border: 0px;
     line-height: 38px;
     font-weight: 700;
-    padding: 1px 48px;
     border-radius: 3px;
-    cursor:pointer;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .secciones img{
-	width: 25%;
+	width: 100%;
     float: left;
-    height: fit-content;
 }
+
 .facilidades{
 	float: left;
 	width: 100%;
@@ -568,6 +600,10 @@ header .sub-nav:hover{
 	font-size: 11px;
 }
 
+.marcas{
+	width: 100%;
+}
+
 .facilidades p:nth-child(3){
 	margin-top: 0px
 }
@@ -582,8 +618,9 @@ footer{
 }
 
 .seccion{
-	width: 100%
-}
+	width: 25%;
+    float: left;
+    display: inline-block;}
 
 .seccion:hover{
 	opacity: 0.6;
@@ -608,16 +645,34 @@ footer{
 [type="checkbox"] {
 	background-color: #ffffff;
 	cursor: pointer;
+	visibility: hidden;
+	float: left;
+	margin: 1px 12px;
+
+}
+
+.lista-uno .lista-dos input:before{
+	content: "\f096";
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 16px;
+	color: #9fa1a3;
+	visibility: visible;
+    transition: color .3s ease-in;
+
 }
 
 .news-titulo{
-	font-weight: 800;
-	width: 100%;
-	display: inline-block;
-	letter-spacing: 0px;
-	color: white;
-	font-size: 12px;
-	margin-top: 30px;
+    font-weight: 800;
+    width: 100%;
+    display: inline-block;
+    letter-spacing: 0px;
+    color: white;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+footer .fondo{
+	background-color:#d6d7d8;
 }
 
 .productos p{	
@@ -625,23 +680,64 @@ footer{
     font-weight: 700;
 }
 
+.productos span{
+	font-weight: 900;
+}
+
 .facilidades .container{
 	margin-bottom: 60px;
 }
-
 .container .imagenes:nth-child(1) .facilidad{
 	padding-top: 20px;
 }
-
 .container .imagenes:nth-child(2) .facilidad{
 	padding-bottom: 20px;
 }
-
 .banner-copas{
 	width: 100%;
 }
-
 .banner-copas img{
 	width: 100%;
 }
 
+
+@media only screen and (max-width: 1024px){
+	.container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+	}
+	.columna-uno {
+	    width: 100%;
+	}
+
+	.productos-nuevo {
+	    width: 100%;
+	}
+	.orden{
+	float: left;
+	width: 100%;
+	}
+	.orden label, select{
+		float: left;
+	}
+
+@media only screen and (max-width: 1279px)
+{
+
+.container{
+	float: left;
+	width: 100%;
+}
+
+header .container{
+ 	float: left;
+ 	width: 100%;
+}
+
+
+
+
+
+}
