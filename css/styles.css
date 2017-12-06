@@ -700,28 +700,8 @@ footer .fondo{
 }
 
 
-@media only screen and (max-width: 1024px){
-	.container {
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-    text-align: center;
-	}
-	.columna-uno {
-	    width: 100%;
-	}
 
-	.productos-nuevo {
-	    width: 100%;
-	}
-	.orden{
-	float: left;
-	width: 100%;
-	}
-	.orden label, select{
-		float: left;
-	}
-
+	
 @media only screen and (max-width: 1279px)
 {
 
@@ -734,9 +714,42 @@ header .container{
  	float: left;
  	width: 100%;
 }
+.columna-uno {
+	    width: 100%;
+}
+.productos-nuevo {
+	width: 100%;
+}
+.orden{
+	float: left;
+	width: 100%;
+}
+.orden label, select{
+	float: left;
+}
+.columnas.columna-uno{
+	display: none;
+}
+.contenedor-mobile:before{
+	content:"\f0c9";
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 15px;
+	float: left;
+}
+.contenedor-mobile{
+	width: 100%;
+	float: left;
+}
 
 
+}
 
-
-
+@media only screen and (max-width: 768px){
+	.producto{
+		width: 50%;
+		display: inline-block;
+	}
+	.producto .cucarda{
+		top: 10px;
+	}
 }

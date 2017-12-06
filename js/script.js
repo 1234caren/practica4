@@ -2,6 +2,7 @@
 jQuery(document).ready(function(){
 
 	HEADER.init();
+	CAREN.init();
 
 	jQuery('.lista-uno span').click( function(){
 		jQuery(this).toggleClass('open');
@@ -36,3 +37,15 @@ var HEADER = {
     }
 }
 
+var CAREN = {
+	init:function(){
+		this.slide();
+	},
+
+	slide:function(){
+		jQuery('.contenedor-mobile').click(function(){
+			jQuery(this).toggleClass('open');
+			jQuery('.columna-uno').slideToggle();
+		});
+	}
+}
