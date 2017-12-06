@@ -3,9 +3,9 @@ jQuery(document).ready(function(){
 
 	HEADER.init();
 
-	jQuery('.lista-uno').on('click', function(){
-		jQuery('.lista-dos',this).slideToggle();
-		
+	jQuery('.lista-uno span').click( function(){
+		jQuery(this).toggleClass('open');
+		jQuery(this).next('ul').slideToggle();
 	});
 });
 
