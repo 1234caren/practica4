@@ -558,6 +558,7 @@ header .sub-nav:hover{
 
 .imagenes{
 	width: 100%;
+	min-height: 61px;
 }
 
 .facilidad p{
@@ -567,11 +568,11 @@ header .sub-nav:hover{
 	font-size: 11px;
 }
 
-.imagenes p:nth-child(2){
+.facilidades p:nth-child(3){
 	margin-top: 0px
 }
 
-.imagenes p:nth-child(1){
+.facilidades p:nth-child(2){
 	margin-bottom: 3px
 }
 
