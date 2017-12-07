@@ -748,55 +748,146 @@ footer .fondo{
 
 
 
-
 @media only screen and (max-width: 991px)
 {
 
-header .container {
+	.container-nav.sticky ul {
+    display: block !important;
+	}
+
+	header .container {
+	    float: left;
+	    width: 100%;
+	    position: relative;
+	    top: 0px;
+	}
+
+	header .info-inicial {
+	    width: 100%;
+	    position: absolute;
+	    left: 0;
+	}
+
+	header .baja{
+		width: 50%;
+		margin-top: 25px;
+		font-size: 22px;
+	}
+
+	header .info-inicial span {
+	    font-size: 14px;
+	}
+
+	header .login ul li {
+	    font-size: 14px;
+	}
+
+	header .social .iconos {
+	    margin: 10px 12px;
+	}
+
+	.new-inp{
+		display: none;
+	}
+
+	header .search {
+	    border-bottom: 0px;
+	}
+
+	header .content-search {
+	    font-size: 24px;
+		margin-right: 14px;
+	}
+
+	.container-nav ul{
+	display: none;
+	float: left;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 179px;
+    opacity: 0.9;
+    background-color: #000;
+	}
+
+	.container-nav ul a {
     float: left;
     width: 100%;
-    position: relative;
-    top: 0px;
+    text-align: center;
+	}
+
+	.container-nav:before{
+	    content: "\f0c9";
+	    font: normal normal normal 14px/1 FontAwesome;
+	    font-size: 24px;
+	    float: left;
+    	width: 6%;
+    	padding: 14px 0;
+	}
+
+	nav .caja-boton {
+	    float: left;
+	    width: 35px;
+	    height: 35px;
+	    margin-top: 10px;
+	    margin-left: -46px;
+	    opacity: 0.6;
+	}
+
+	nav .caja-boton.open{
+		font-weight: 400;
+	}
+
+	nav.container-nav.sticky:before {
+		opacity: 0;
+	}
+
+	nav.container-nav.sticky{
+		font-size: 14px;
+	}
+
+	nav.container-nav.sticky .sub-nav {
+    padding: 19px 9px;
+	}
+
+	nav.container-nav li.sub-nav{
+		color: #fff;
+	}
+
+	nav.container-nav.sticky img{
+    width: 145px;
+    margin-bottom: -3px;
+    margin-left: 6px;
+    }
+
+    nav.container-nav.sticky .logo-sticky{
+    	display: none;
+    }
+
+    nav.container-nav.sticky{
+    	display: none;
+    	width: 100%;
+	    background-color: transparent;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    padding-top: 0px;
+	    transition: padding-top 1s;
+	    z-index: 99999;
+	    box-shadow: none;
+    }
+
+	nav.container-nav li.sub-nav{
+    padding: 14px 22px;
+    float: left;
+	}
+
 }
 
-header .info-inicial {
-    width: 100%;
-    position: absolute;
-    left: 0;
-}
 
-header .baja{
-	width: 50%;
-	margin-top: 25px;
-	font-size: 22px;
-}
 
-header .info-inicial span {
-    font-size: 14px;
-}
 
-header .login ul li {
-    font-size: 13px;
-}
 
-header .social .iconos {
-    margin: 10px 12px;
-}
-
-.new-inp{
-	display: none;
-}
-
-header .search {
-    border-bottom: 0px;
-}
-
-header .content-search {
-    font-size: 24px;
-	margin-right: 14px;
-}
-
-}
 
 
 @media only screen and (max-width: 768px){
