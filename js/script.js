@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
 
 	HEADER.init();
 	SLIDEFILTRO.init();
-
+	JUAN.init();
 
 });
 
@@ -54,6 +54,20 @@ var SLIDEFILTRO = {
 		jQuery('.lista-uno span').click(function(){
 		    jQuery(this).toggleClass('open');
 		    jQuery(this).next('ul').slideToggle();
+		});
+		}
+}
+
+
+var JUAN = {
+	init:function(){
+		this.slide();
+	},
+
+	slide:function(){
+		jQuery('.caja-boton').click( function(){
+			jQuery(this).toggleClass('open');
+			jQuery(this).children('ul').slideToggle();
 		});
  	}   
 }
