@@ -345,7 +345,7 @@ header .content-social{
 }
 
 header .content-login{
-    margin-right: 0;
+    margin-right: 20px;
     display: inline-block;
     float: right;
 }
@@ -406,7 +406,7 @@ header .login ul li{
 header .login ul .borde a{
     border-right: 1px solid;
     padding: 2px;
-    padding-right: 28px;
+    padding-right: 16px;
 }
 
 	/*Segunda*/
@@ -423,7 +423,7 @@ header .content-search{
 	display: inline-block;
     float: right;
     position: absolute;
-    right: 0;
+    right: 10px;
 }
 
 header .logo{
@@ -701,11 +701,8 @@ footer .fondo{
 }
 
 
+@media only screen and (max-width: 1280px)
 
-
-
-	
-@media only screen and (max-width: 1279px)
 {
 	.container{
 		float: left;
@@ -745,7 +742,6 @@ footer .fondo{
 		float: left;
 	}
 }
-
 .breadcrumbs{
 	float: left;
 	width: 100%;
@@ -766,6 +762,59 @@ footer .fondo{
 
 }
 
+
+
+
+@media only screen and (max-width: 991px)
+{
+
+header .container {
+    float: left;
+    width: 100%;
+    position: relative;
+    top: 0px;
+}
+
+header .info-inicial {
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+header .baja{
+	width: 50%;
+	margin-top: 25px;
+	font-size: 22px;
+}
+
+header .info-inicial span {
+    font-size: 14px;
+}
+
+header .login ul li {
+    font-size: 13px;
+}
+
+header .social .iconos {
+    margin: 10px 12px;
+}
+
+.new-inp{
+	display: none;
+}
+
+header .search {
+    border-bottom: 0px;
+}
+
+header .content-search {
+    font-size: 24px;
+	margin-right: 14px;
+}
+
+}
+
+
 @media only screen and (max-width: 768px){
 	.producto{
 		width: 50%;
@@ -774,6 +823,7 @@ footer .fondo{
 	.producto .cucarda{
 		top: 10px;
 }
+
 
 .pdp .img-miniatura{
 	display: inline-block;
@@ -808,5 +858,7 @@ footer .fondo{
 	display: block;
 	width: 70%;
 	margin: 0 auto;
+
+}
 
 }
