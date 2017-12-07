@@ -3,11 +3,11 @@ jQuery(document).ready(function(){
 
 	HEADER.init();
 	CAREN.init();
+	JUAN.init();
 
-	jQuery('.lista-uno span').click( function(){
-		jQuery(this).toggleClass('open');
-		jQuery(this).next('ul').slideToggle();
-	});
+
+
+
 });
 
 
@@ -43,9 +43,22 @@ var CAREN = {
 	},
 
 	slide:function(){
-		jQuery('.contenedor-mobile').click(function(){
+		jQuery('.lista-uno span').click( function(){
+		jQuery(this).toggleClass('open');
+		jQuery(this).next('ul').slideToggle();
+	});
+	}
+}
+
+var JUAN = {
+	init:function(){
+		this.slide();
+	},
+
+	slide:function(){
+		jQuery('.caja-boton').click( function(){
 			jQuery(this).toggleClass('open');
-			jQuery('.columna-uno').slideToggle();
+			jQuery(this).children('ul').slideToggle();
 		});
 	}
 }
