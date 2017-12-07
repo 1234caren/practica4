@@ -863,10 +863,8 @@ footer .fondo{
     padding: 19px 9px;
 	}
 
-	nav.container-nav .caja-boton.open ul a li.sub-nav{
+	nav.container-nav li.sub-nav{
 		color: #fff;
-		font-size: 18px;
-    	opacity: 1;
 	}
 
 	nav.container-nav.sticky img{
