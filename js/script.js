@@ -45,7 +45,7 @@ var CAREN = {
 	slide:function(){
 		jQuery('.contenedor-mobile').click(function(){
 			jQuery(this).toggleClass('open');
-			jQuery('.columna-uno').slideToggle();
+			jQuery('.lista-uno').slideToggle();
 		});
 	}
 }
