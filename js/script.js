@@ -2,12 +2,9 @@
 jQuery(document).ready(function(){
 
 	HEADER.init();
-	CAREN.init();
+	SLIDEFILTRO.init();
 
-	jQuery('.lista-uno span').click( function(){
-		jQuery(this).toggleClass('open');
-		jQuery(this).next('ul').slideToggle();
-	});
+
 });
 
 
@@ -18,6 +15,9 @@ function newsSelect(sender, defaultValue) {
     if (sender.value == defaultValue) sender.value = '';
     else sender.select();
 }
+	function myFunction(x) {
+    x.classList.toggle("change");
+}
 
 //Header Sticky
 var HEADER = {
@@ -26,7 +26,6 @@ var HEADER = {
     },
 
     stickyHeader: function(){
-        console.log('entro');
         jQuery(window).scroll(function () {
             if (jQuery(this).scrollTop() > 130) {
                 jQuery(".container-nav").addClass('sticky');
@@ -37,15 +36,24 @@ var HEADER = {
     }
 }
 
-var CAREN = {
-	init:function(){
-		this.slide();
-	},
+var SLIDEFILTRO = {
+    init:function(){
+        this.slide();     
+        this.slide2();     
+    },
 
-	slide:function(){
-		jQuery('.contenedor-mobile').click(function(){
-			jQuery(this).toggleClass('open');
-			jQuery('.lista-uno').slideToggle();
+    slide: function(){
+	   	jQuery('.grilla .contenedor-mobile .filtro').click(function(){
+	    	console.log('entro');
+	    	jQuery(this).toggleClass('abrir');
+	     	jQuery('.grilla .columna-uno').slideToggle();
+	    });
+    },
+
+ 	slide2: function(){
+		jQuery('.lista-uno span').click(function(){
+		    jQuery(this).toggleClass('open');
+		    jQuery(this).next('ul').slideToggle();
 		});
-	}
+ 	}   
 }

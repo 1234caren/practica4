@@ -192,6 +192,9 @@ body {
 	float: left;
     width: 100%;
 }
+.grilla .filtro{
+	display: none;
+}
 .row{
 	display: block;
 }
@@ -712,35 +715,7 @@ footer .fondo{
 	 	float: left;
 	 	width: 100%;
 	}
-	.producto{
-		width: 50%;
-	}
-	.columna-uno {
-	    width: 100%;
-	}
-	.productos-nuevo {
-		width: 100%;
-	}
-	.orden{
-		float: left;
-		width: 100%;
-	}
-	.orden label, select{
-		float: left;
-	}
-	.columnas.columna-uno{
-		display: none;
-	}
-	.contenedor-mobile:before{
-		content:"\f0c9";
-		font: normal normal normal 14px/1 FontAwesome;
-		font-size: 15px;
-		float: left;
-	}
-	.contenedor-mobile{
-		width: 100%;
-		float: left;
-	}
+
 }
 .breadcrumbs{
 	float: left;
@@ -768,49 +743,49 @@ footer .fondo{
 @media only screen and (max-width: 991px)
 {
 
-header .container {
-    float: left;
-    width: 100%;
-    position: relative;
-    top: 0px;
-}
+	header .container {
+	    float: left;
+	    width: 100%;
+	    position: relative;
+	    top: 0px;
+	}
 
-header .info-inicial {
-    width: 100%;
-    position: absolute;
-    left: 0;
-}
+	header .info-inicial {
+	    width: 100%;
+	    position: absolute;
+	    left: 0;
+	}
 
-header .baja{
-	width: 50%;
-	margin-top: 25px;
-	font-size: 22px;
-}
+	header .baja{
+		width: 50%;
+		margin-top: 25px;
+		font-size: 22px;
+	}
 
-header .info-inicial span {
-    font-size: 14px;
-}
+	header .info-inicial span {
+	    font-size: 14px;
+	}
 
-header .login ul li {
-    font-size: 13px;
-}
+	header .login ul li {
+	    font-size: 13px;
+	}
 
-header .social .iconos {
-    margin: 10px 12px;
-}
+	header .social .iconos {
+	    margin: 10px 12px;
+	}
 
-.new-inp{
-	display: none;
-}
+	.new-inp{
+		display: none;
+	}
 
-header .search {
-    border-bottom: 0px;
-}
+	header .search {
+	    border-bottom: 0px;
+	}
 
-header .content-search {
-    font-size: 24px;
-	margin-right: 14px;
-}
+	header .content-search {
+	    font-size: 24px;
+		margin-right: 14px;
+	}
 
 }
 
@@ -822,43 +797,114 @@ header .content-search {
 	}
 	.producto .cucarda{
 		top: 10px;
+	}
+	.pdp .img-miniatura{
+		display: inline-block;
+		float: left;
+		width: 20%;
+	}
+
+	.pdp .img-grande{
+		display: inline-block;
+		float: left;
+		width: 80%;
+	}
+
+	.pdp .producto-img{
+		float: left;
+		width: 40% 
+	}
+
+	.pdp .img-miniatura img{
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.pdp .det-producto{
+		padding: 50px 0 0 0;
+		width: 100%;
+		float: left;
+	}
+
+	.pdp .img-grande img{
+		display: block;
+		width: 70%;
+		margin: 0 auto;
+
+	}
+
+	.columnas.columna-uno{
+		display: none;
+	}
+	.grilla .contenedor-mobile .filtro:before{
+		content:"\f0b0";
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: 15px;
+		float: left;
+		padding-right: 11px;
+		padding-top: 2px;
+	}
+	.grilla .contenedor-mobile{
+		width: 100%;
+		float: left;
+	}
+	.grilla .columnas .open{
+		display: block;
+	}
+	.grilla .filtro{
+		display: block;
+		width: 100%;
+	    text-align: initial;
+	    padding-left: 16px;
+	}
+		.producto{
+		width: 50%;
+	}
+	.columna-uno {
+	    width: 100%;
+	}
+	.productos-nuevo {
+		width: 100%;
+	}
+	.orden{
+		float: left;
+		width: 100%;
+	}
+	.orden label, select{
+		float: left;
+	}
+
+
+/*caren*/
+.container {
+    margin-top:5%;
+    display: inline-block;
+    cursor: pointer;
 }
 
-
-.pdp .img-miniatura{
-	display: inline-block;
-	float: left;
-	width: 20%;
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: red;
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
-.pdp .img-grande{
-	display: inline-block;
-	float: left;
-	width: 80%;
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
 }
 
-.pdp .producto-img{
-	float: left;
-	width: 40% 
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
 }
 
-.pdp .img-miniatura img{
-	display: block;
-	width: 80%;
-	margin: 0 auto;
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
 }
-
-.pdp .det-producto{
-	padding: 50px 0 0 0;
-	width: 100%;
-	float: left;
-}
-
-.pdp .img-grande img{
-	display: block;
-	width: 70%;
-	margin: 0 auto;
-
-}
-
 }
